@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz App | Felipe Arias Lemos</title>
+    <link rel="shortcut icon" href="/IMG/control-de-juego.png"> <!-- Icono de control -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!--Link de iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- Boton Start Quiz -->
+    <div class="start_btn"><button>Iniciar</button></div>
+
+    <!-- Caja de informacion -->
+    <div class="info_box">
+        <div class="info-title"><span>Reglas de este Quizz</span></div>
+        <div class="info-list">
+            <div class="info">1. Sólo tendrás <span>15 segundos</span> por cada pregunta.</div>
+            <div class="info">2. Una vez seleccionada la respuesta, no se puede deshacer.</div>
+            <div class="info">3. No puedes seleccionar ninguna opción una vez que se acaba el tiempo.</div>
+            <div class="info">4. No puedes salir del Quiz mientras lo estás presentando.</div>
+            <div class="info">5. Obtendrás puntos en función de tus respuestas correctas.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Salir</button>
+            <button class="restart">Continuar</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz App</div>
+            <div class="timer">
+                <div class="time_left_txt">Tiempo</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Aquí inserte las preguntas de JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Aquí inserte las opciones de JavaScript -->
+            </div>
+        </section>
+
+        <!-- pie de página -->
+        <footer>
+            <div class="total_que">
+                <!-- Aquí inserte el número de recuento de preguntas desde JavaScript -->
+            </div>
+            <button class="next_btn">Siguiente</button>
+        </footer>
+    </div>
+
+   <!-- Cuadro de resultados -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">¡Has completado el Quiz!</div>
+        <div class="score_text">
+            <!-- Aquí inserte el resultado de la puntuación desde JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Repetir Quizz</button>
+            <button class="quit">Salir</button>
+        </div>
+    </div>
+
+    <!-- Dentro de este archivo JavaScript he insertado las Preguntas y Opciones -->
+    <script src="js/preguntas.js"></script>
+
+    <!-- Dentro de este archivo JavaScript codifique todos los Quiz Codes -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
